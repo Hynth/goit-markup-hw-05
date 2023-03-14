@@ -312,7 +312,7 @@ address {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: transform var(--time-transition) var(--tfunction-transition);
+  transition: opacity var(--time-transition) var(--tfunction-transition);
 }
 
 .backdrop.is-hidden .modal {
