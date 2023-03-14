@@ -61,19 +61,22 @@
         </li>
       </ul>
     </header>
-
     <main>
       <section class="main-top">
         <div class="main-overlay-img">
           <section class="container-top-main container">
             <h1 class="main-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-            <button class="button pointer" type="button">
+            <button class="button pointer" type="button" data-modal-open>
               Solicite nuestro servicio
             </button>
           </section>
         </div>
       </section>
-
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="icon-close pointer" data-modal-close>&times;</button>
+        </div>
+      </div>
       <section class="main-middle container">
         <section class="main-element-middle1">
           <h2 style="display: none">Beneficios</h2>
@@ -136,32 +139,16 @@
               <div class="list-middle2-overlay">
                 <p class="text-main-middle2">APLICACIONES DE ESCRITORIO</p>
               </div>
-
-              <!-- <img
-                src="./images/typing_tablet.jpg"
-                alt="Someone typing code in a keyboard front a tablet"
-                width="373"
-              /> -->
             </li>
             <li class="list-main-middle2">
               <div class="list-middle2-overlay">
                 <p class="text-main-middle2">APLICACIONES MÓVILES</p>
               </div>
-              <!-- <img
-                src="./images/laptop_phone.jpg"
-                alt="Someone watching the phone and using a laptop"
-                width="373"
-              /> -->
             </li>
             <li class="list-main-middle2">
               <div class="list-middle2-overlay">
                 <p class="text-main-middle2">SOLUCIONES DE DISEÑO</p>
               </div>
-              <!-- <img
-                src="./images/tablet_panelcolor.jpg"
-                alt="A tablet showing a color panel"
-                width="373"
-              /> -->
             </li>
           </ul>
         </section>
@@ -404,5 +391,6 @@
         </section>
       </section>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
